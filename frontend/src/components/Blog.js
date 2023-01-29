@@ -42,7 +42,7 @@ const Blog = () => {
 
         blogs.map(blogPost => {
             return list.push(
-            <div className="col-md-6">
+            <div className=" m-4 col-md-6">
                 <div className="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                     <div className="col p-4 d-flex flex-column position-static">
                     <strong className="d-inline-block mb-2 text-success">{capitalizeFirstLetter(blogPost.category)}</strong>
@@ -86,7 +86,7 @@ const Blog = () => {
                     <Link className="p-2 link-secondary" to="/category/other">Other</Link>
                 </nav>
             </div>
-            <div className="p-4 p-md-5 mb-4 rounded text-bg-dark">
+            <div className="m-4 p-4 p-md-5 mb-4 rounded text-bg-dark">
                 <div className="col-md-6 px-0">
                 <h1 clclassNameas="display-4 fst-italic">{featuredBlog.title}</h1>
                 <p className="lead my-3">{featuredBlog.excerpt}</p>

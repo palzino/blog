@@ -2,7 +2,7 @@ import React from "react";
 import { Link, NavLink } from "react-router-dom";
 
 const navbar = () => (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+    <nav className="navbar navbar-default navbar-fixed-top">
         <div className="container-fluid">
             <Link className="navbar-brand" to='/' >Palvir's World</Link>
             <button 
