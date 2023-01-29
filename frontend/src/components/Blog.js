@@ -75,20 +75,21 @@ const Blog = () => {
 
     return (
         <div>
-            <div className="nav-scroller py-1 mb-2">
-                <nav className="navbar d-flex fixed-bottom">
-                    <Link className="p-2 link-secondary" to="/category/homelab">Homelab</Link>
-                    <Link className="p-2 link-secondary" to="/category/science">Science</Link>
-                    <Link className="p-2 link-secondary" to="/category/work">Work</Link>
-                    <Link className="p-2 link-secondary" to="/category/projects">Projects</Link>
-                    <Link className="p-2 link-secondary" to="/category/coding">Coding</Link>
-                    <Link className="p-2 link-secondary" to="/category/blockchain">Blockchain</Link>
-                    <Link className="p-2 link-secondary" to="/category/other">Other</Link>
-                </nav>
-            </div>
-            <div className="m-4 p-4 p-md-5 mb-4 rounded text-bg-dark">
-                <div className="col-md-6 px-0">
-                <h1 clclassNameas="display-4 fst-italic">{featuredBlog.title}</h1>
+            
+                <div className="nav-scroller py-1 mb-2 bg-light">
+                    <nav className="navbar fixed-top mt-5 mb-2 d-flex bg-body-secondary">
+                        <Link className="p-2 link-secondary" to="/category/homelab">Homelab</Link>
+                        <Link className="p-2 link-secondary" to="/category/science">Science</Link>
+                        <Link className="p-2 link-secondary" to="/category/work">Work</Link>
+                        <Link className="p-2 link-secondary" to="/category/projects">Projects</Link>
+                        <Link className="p-2 link-secondary" to="/category/coding">Coding</Link>
+                        <Link className="p-2 link-secondary" to="/category/blockchain">Blockchain</Link>
+                        <Link className="p-2 link-secondary" to="/category/other">Other</Link>
+                    </nav>
+            </div><br></br>
+            <div className=" mt-5 m-4 p-4 p-md-5 mb-4 rounded text-bg-dark">
+                <div className="col-md-6 px-0 mt-2">
+                <h1 classNameas="display-4 fst-italic">{featuredBlog.title}</h1>
                 <p className="lead my-3">{featuredBlog.excerpt}</p>
                 <p className="lead mb-0">
                     <Link to={`/blog/${featuredBlog.slug}`} className="text-white fw-bold">Continue reading...</Link>
