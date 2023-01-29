@@ -82,7 +82,7 @@ const Blog = () => {
                     <Link className="p-2 link-secondary" to="/category/work">Work</Link>
                     <Link className="p-2 link-secondary" to="/category/projects">Projects</Link>
                     <Link className="p-2 link-secondary" to="/category/coding">Coding</Link>
-                    <Link className="p-2 link-secondary" to="/category/blockchain">BlockchaiLink</Link>
+                    <Link className="p-2 link-secondary" to="/category/blockchain">Blockchain</Link>
                     <Link className="p-2 link-secondary" to="/category/other">Other</Link>
                 </nav>
             </div>

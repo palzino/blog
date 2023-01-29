@@ -2,14 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 
-const home = () => (
+const Homelab = () => (
     <div className="container">
         <div className="mt-4 p-5 bg-primary text-white rounded text-center">
-            <h1>Welcome, I am Palvir</h1>
-            <p>And this is my life</p>
+            <h1>Welcome to my HomeLab</h1>
+            <p>Here you can see the physcial and virtual environments I run and the services deployed</p>
         </div>
         
     </div>
 );
 
-export default home;
+export default Homelab;
