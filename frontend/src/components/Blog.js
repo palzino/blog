@@ -76,7 +76,7 @@ const Blog = () => {
     return (
         <div>
             <div className="nav-scroller py-1 mb-2">
-                <nav className="nav d-flex">
+                <nav className="navbar d-flex fixed-bottom">
                     <Link className="p-2 link-secondary" to="/category/homelab">Homelab</Link>
                     <Link className="p-2 link-secondary" to="/category/science">Science</Link>
                     <Link className="p-2 link-secondary" to="/category/work">Work</Link>
