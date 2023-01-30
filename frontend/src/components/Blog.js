@@ -43,12 +43,12 @@ const Blog = () => {
         blogs.map(blogPost => {
             return list.push(
             <div className=" m-4 col-md-6">
-                <div className="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div id="form-internal-container" className="row g-0 text-white rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                     <div className="col p-4 d-flex flex-column position-static">
                     <strong className="d-inline-block mb-2 text-success">{capitalizeFirstLetter(blogPost.category)}</strong>
-                    <h3 className="mb-0">Post title</h3>
-                    <div className="mb-1 text-muted">Nov 11</div>
-                    <p class="mb-auto">{blogPost.excerpt}</p>
+                    <h3 className="mb-0">{blogPost.title}</h3>
+                    <div className="mb-1">{blogPost.month}</div>
+                    <p className="mb-auto">{blogPost.excerpt}</p>
                     <Link to={`/blog/${blogPost.slug}`} className="stretched-link">Continue reading</Link>
                     </div>
                     <div className="col-auto d-none d-lg-block">
@@ -76,7 +76,7 @@ const Blog = () => {
     return (
         <div>
             
-                <div className="nav-scroller py-1 mb-2 bg-light">
+                <div className="nav-scroller m-3 py-1 mb-2 bg-light">
                     <nav className="navbar fixed-top mt-5 mb-2 d-flex bg-body-secondary">
                         <Link className="p-2 link-secondary" to="/category/homelab">Homelab</Link>
                         <Link className="p-2 link-secondary" to="/category/science">Science</Link>
@@ -87,14 +87,16 @@ const Blog = () => {
                         <Link className="p-2 link-secondary" to="/category/other">Other</Link>
                     </nav>
             </div><br></br>
+            <div className="mt-2 text-center">
             <div className=" mt-5 m-4 p-4 p-md-5 mb-4 rounded text-bg-dark">
-                <div className="col-md-6 px-0 mt-2">
-                <h1 classNameas="display-4 fst-italic">{featuredBlog.title}</h1>
+                <div className="px-0 mt-2">
+                <h1 className="display-4 fst-italic">{featuredBlog.title}</h1>
                 <p className="lead my-3">{featuredBlog.excerpt}</p>
                 <p className="lead mb-0">
                     <Link to={`/blog/${featuredBlog.slug}`} className="text-white fw-bold">Continue reading...</Link>
                 </p>
                 </div>
+            </div>
             </div>
             
             {getBlogs()}
