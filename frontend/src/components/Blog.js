@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
 import { Link, NavLink } from "react-router-dom";
 import axios from 'axios';
-
+import '../form.css'
 const Blog = () => {
     const [blogs, setBlogs] = useState([]);
     const [featuredBlog, setFeaturedBlog] = useState([]);

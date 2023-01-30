@@ -10,7 +10,7 @@ const Homelab = () => (
         </div>
 
         <div>
-            <div class="container">
+            <div id="form-internal-container" class="mt-3 container text-white ">
                 <div class="row">
                         <div class="col-sm">
                             What is a homelab?
