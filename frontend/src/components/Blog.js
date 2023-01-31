@@ -74,10 +74,10 @@ const Blog = () => {
     };
 
     return (
-        <div>
+        <div className="overflow-hidden">
             
-                <div className="nav-scroller py-1 mb-2 bg-light">
-                    <nav className="navbar mb-2 d-flex bg-body-secondary">
+                <div className="nav-scroller py-1 bg-light">
+                    <nav className="navbar d-flex bg-body-secondary">
                         <Link className="p-2 link-secondary" to="/category/homelab">Homelab</Link>
                         <Link className="p-2 link-secondary" to="/category/science">Science</Link>
                         <Link className="p-2 link-secondary" to="/category/work">Work</Link>

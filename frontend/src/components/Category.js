@@ -5,9 +5,8 @@ import { NavLink, Link } from "react-router-dom";
 const category = () => (
     <div>
          
-        
-        <div className="nav-scroller py-1 mb-2 bg-light">
-                    <nav className="navbar mt-5 d-flex bg-body-secondary">
+        <div className="nav-scroller py-1 bg-light">
+                    <nav className="navbar d-flex bg-body-secondary">
                         <Link className="p-2 link-secondary" to="/category/homelab">Homelab</Link>
                         <Link className="p-2 link-secondary" to="/category/science">Science</Link>
                         <Link className="p-2 link-secondary" to="/category/work">Work</Link>
