@@ -89,7 +89,7 @@ const Blog = () => {
             </div><br></br>
             <div className="mt-2 text-center">
             <div className=" mt-5 m-4 p-4 p-md-5 mb-4 rounded text-bg-dark">
-                <div className="px-0 mt-2">
+                <div className=" px-0 mt-2">
                 <h1 className="display-4 fst-italic">{featuredBlog.title}</h1>
                 <p className="lead my-3">{featuredBlog.excerpt}</p>
                 <p className="lead mb-0">
