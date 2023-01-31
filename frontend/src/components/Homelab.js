@@ -64,12 +64,12 @@ const Homelab = () => (
                 </div>
             </div>
             <div>
-                    <div id="form-internal-container" className="mt-3 container text-white ">
+                    <div id="form-internal-container" className="mt-3 container text-center text-white ">
                         <h2 className="text-center">System Diagram</h2>
                         <p className="text-center">This is a system diagram; it shows brief relations between the virtual services run<br></br>
                             All though these services are virtualised they all have their own IPv4 addresses and some services are exposed to the web via NGINX
                         </p>
-                        <img  className="center" width="750" height="600" src={require("../images/homelab.png")}/>
+                        <img width="750" height="600" src={require("../images/homelab.png")}/>
                     </div>
                 </div>
 
