@@ -35,19 +35,43 @@ const Homelab = () => (
             <div id="form-internal-container" className="mt-3 container text-white ">
                 <h2 className="col-sm text-center">My homelab</h2><br></br>
                 <div className="row">
-                    <div className="col-sm text-center">
-                        My homelab
-                    </div>
-                    <div className="col-sm text-center">
-                        Services run
+                        <div className="col-sm text-center">
+                            <h2 className="border-bottom">My homelab</h2>
+                            <img width="350" height="550" src={require("../images/lab_latest.PNG")} />
+                        </div>
+                    <div className="col-md text-center">
+                        <h2 className="border-bottom">System at a glance</h2>
+                        <p>at a highlevel the services/VMs I run are:</p>
+                        <ul>
+                            <li>Proxmox - This is my base operating system</li>
+                            <li>PfSense - Virtualised router with VNIC</li>
+                            <li>Nginx - Acts as reverse proxy with per domain SSL in isolated VM</li>
+                            <li>TrueNAS - Virtualised NAS with SATA controller pcie access</li>
+                            <li>Plex - Media server using SMB from truenas in a WIN10 VM with GPU pass-through</li>
+                                <ul><br></br>
+                                    <h3>Docker services in Ubuntu VM:</h3>
+                                    <li>Promethus -  Mtrics exporter for running services</li>
+                                    <li>Adguard exporter - Exports DNS metrics into Promethus</li>
+                                    <li>System Exporter - Exports system metrics into Promethus</li>
+                                    <li>Grafana -  Metrics visualiser for running services from Promethus</li>
+                                    <li>Spotify Metrics App- Tracks my listening via spotify api in a web app</li>
+                                    <li>Many dockerised websites/webapps and databases</li>
+                                </ul>
+                            
+                            
+                        </ul>
                     </div>
                 </div>
-            
-                            
-                        
-                
             </div>
-
+            <div>
+                    <div id="form-internal-container" className="mt-3 container text-white ">
+                        <h2 className="text-center">System Diagram</h2>
+                        <p className="text-center">This is a system diagram; it shows brief relations between the virtual services run<br></br>
+                            All though these services are virtualised they all have their own IPv4 addresses and some services are exposed to the web via NGINX
+                        </p>
+                        <img src={require("../images/homelab.svg")}/>
+                    </div>
+                </div>
 
         </div>
     </div>
