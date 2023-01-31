@@ -30,12 +30,16 @@ const BlogDetail = () => {
 
     return (
     <div className="container mt-3">
-        <h1 className="diplay-2">{blog.title}</h1>
-        <h2 className="text-muted mt-3">Category: {capitalizeFirstLetter(blog.category)}</h2>
-        <h4>{blog.day} {blog.month}</h4>
-        <div className="mt-5 mb-5" dangerouslySetInnerHTML={createBlog()} />
-        <hr />
-        <p className="lead mb-5"><Link className="font-weight-bold" to="/blog"> Back to all posts</Link></p>
+        <div id="form-internal-container">
+        <h1 className="diplay-2 text-white">{blog.title}</h1>
+        <h2 className=" mt-3 text-white">Category: {capitalizeFirstLetter(blog.category)}</h2>
+        <h4 className="text-white">{blog.day} {blog.month}</h4>
+        </div><br></br>
+        <div id="form-internal-container" className=" text-white">
+        <div className="mt-5 mb-5 text-white" dangerouslySetInnerHTML={createBlog()} />
+        <hr className="text-white"/>
+        <p className="lead mb-5 text-white"><Link className="font-weight-bold" to="/blog"> Back to all posts</Link></p>
+        </div>
     </div>
     );
 };
