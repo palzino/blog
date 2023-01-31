@@ -30,7 +30,7 @@ const BlogDetail = () => {
 
     return (
     <div className="container mt-3">
-        <div id="form-internal-container">
+        <div id="form-internal-container" className="container-sm">
         <h1 className="diplay-2 text-white">{blog.title}</h1>
         <h2 className=" mt-3 text-white">Category: {capitalizeFirstLetter(blog.category)}</h2>
         <h4 className="text-white">{blog.day} {blog.month}</h4>
