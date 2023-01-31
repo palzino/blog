@@ -37,7 +37,7 @@ const Homelab = () => (
                 <div className="row">
                         <div className="col-sm text-center">
                             <h2 className="border-bottom">My homelab</h2>
-                            <img width="350" height="550" src={require("../images/lab_latest.PNG")} />
+                            <img width="350" height="550" src={require("../images/lab_latest.PNG")} alt=" My server rack" />
                         </div>
                     <div className="col-md text-center">
                         <h2 className="border-bottom">System at a glance</h2>
@@ -69,7 +69,7 @@ const Homelab = () => (
                         <p className="text-center">This is a system diagram; it shows brief relations between the virtual services run<br></br>
                             All though these services are virtualised they all have their own IPv4 addresses and some services are exposed to the web via NGINX
                         </p>
-                        <img width="750" height="600" src={require("../images/homelab.png")}/>
+                        <img width="750" height="600" src={require("../images/homelab.png")} alt="service diagram"/>
                     </div>
                 </div>
 
