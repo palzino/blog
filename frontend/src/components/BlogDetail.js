@@ -35,7 +35,7 @@ const BlogDetail = () => {
         <h4>{blog.day} {blog.month}</h4>
         <div className="mt-5 mb-5" dangerouslySetInnerHTML={createBlog()} />
         <hr />
-        <p className="lead mb-5"><Link className="font-weight-bold" to="/blog"> Back to old blogs</Link></p>
+        <p className="lead mb-5"><Link className="font-weight-bold" to="/blog"> Back to all posts</Link></p>
     </div>
     );
 };

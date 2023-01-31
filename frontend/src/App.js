@@ -7,7 +7,7 @@ import BlogDetail from './components/BlogDetail';
 import Category from './components/Category';
 import Homelab from "./components/Homelab";
 import Showcase from "./components/Showcase";
-import Cv from "./components/Cv";
+import About from "./components/About";
 const App = () => (
 
     <Router>
@@ -16,7 +16,7 @@ const App = () => (
                 <Route path='/' element={<Home/>} />
                 <Route path='/homelab' element={<Homelab/>} />
                 <Route path='/showcase' element={<Showcase/>} />
-                <Route path='/cv' element={<Cv/>} />
+                <Route path='/about' element={<About/>} />
                 <Route path='/blog' element={<Blog/>} />
                 <Route path='/blog/:id' element={<BlogDetail />} />
                 <Route path='/category/:id' element={<Category />} />
