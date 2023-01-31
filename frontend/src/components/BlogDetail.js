@@ -2,20 +2,21 @@ import React, {useState, useEffect} from "react";
 import { Link, useParams } from "react-router-dom";
 import axios from "axios";
 
-const BlogDetail = (props) => {
+const BlogDetail = () => {
+    const { id } = useParams();
     const [blog, setBlog] = useState({});
     useEffect(() => {
-        const slug = useParams();
+        
         const fetchData = async () => {
             try{
-                const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/blog/${slug}`);
+                const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/blog/${id}`);
                 setBlog(res.data);
             } catch(err){
                 
             }
         };
         fetchData();
-    }, [props.match.params.id]);
+    }, [id]);
 
     const createBlog = () => {
         return {__html: blog.content}
