@@ -69,7 +69,7 @@ const Homelab = () => (
                         <p className="text-center">This is a system diagram; it shows brief relations between the virtual services run<br></br>
                             All though these services are virtualised they all have their own IPv4 addresses and some services are exposed to the web via NGINX
                         </p>
-                        <img src={require("../images/homelab.svg")}/>
+                        <img  className="center" width="750" height="600" src={require("../images/homelab.png")}/>
                     </div>
                 </div>
 
