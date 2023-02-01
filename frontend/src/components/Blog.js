@@ -56,8 +56,8 @@ const Blog = () => {
                     </div>
                 </div>
             </div>
-            )
-        })
+            );
+        });
             for (let i = 0; i < list.length; i+=2){
                 result.push(
                     <div key={i} className = 'row mb-2'>
@@ -74,7 +74,7 @@ const Blog = () => {
     };
 
     return (
-        <div className="overflow-hidden">
+        <div className="overflow-hidden container">
             
                 <div className="nav-scroller py-1 bg-light">
                     <nav className="navbar d-flex bg-body-secondary">

@@ -27,7 +27,14 @@ SECRET_KEY = 'django-insecure-vy@()p3y%%kixz6%d9^&8(@*2ly14!i$h%i@ujw$9@x_p7!4&8
 DEBUG = True
 
 ALLOWED_HOSTS = ['localhost:8000','http://127.0.0.1:8000','localhost']
-CORS_ORIGIN_ALLOW_ALL = True
+CCORS_ALLOW_ALL_ORIGINS = True
+
+CORS_ALLOWED_ORIGINS = [
+    "https://example.com",
+    "https://sub.example.com",
+    "http://localhost:3000",
+    "http://127.0.0.1:9000",
+]
 
 
 # Application definition
@@ -40,16 +47,17 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'corsheaders',
+    "corsheaders",
     'django_summernote',
     'blog',
     
 ]
 
 MIDDLEWARE = [
-    'corsheaders.middleware.CorsMiddleware',
+    
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    "corsheaders.middleware.CorsMiddleware",
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',

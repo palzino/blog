@@ -55,7 +55,7 @@ const Homelab = () => (
                                     <li>System Exporter - Exports system metrics into Promethus</li>
                                     <li>Grafana -  Metrics visualiser for running services from Promethus</li>
                                     <li>Spotify Metrics App- Tracks my listening via spotify api in a web app</li>
-                                    <li>Many dockerised websites/webapps and databases</li>
+                                    <li>Many dockerised websites/webapps and databases (including this one)</li>
                                 </ul>
                             
                             
