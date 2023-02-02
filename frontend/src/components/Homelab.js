@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 
 const Homelab = () => (
-    <div className="container">
+    <div className="overflow-hidden container">
         <div className="mt-4 p-5 bg-primary text-white rounded text-center">
             <h1>Welcome to my HomeLab</h1>
             <p>Here you can see the physcial and virtual environments I run and the services deployed</p>
@@ -69,7 +69,7 @@ const Homelab = () => (
                         <p className="text-center">This is a system diagram; it shows brief relations between the virtual services run<br></br>
                             All though these services are virtualised they all have their own IPv4 addresses and some services are exposed to the web via NGINX
                         </p>
-                        <img width="750" height="600" src={require("../images/homelab.png")} alt="service diagram"/>
+                        <img width="675" height="600" className="img-responsive"  src={require("../images/homelab.png")} alt="service diagram"/>
                     </div>
                 </div>
 
