@@ -27,5 +27,3 @@ COPY --chown=app:app build /code/build
 COPY --chown=app:app manage.py .
 
 ENV PYTHONPATH=$PYTHONPATH:/code
-
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
