@@ -163,7 +163,7 @@ dist
 /node_modules
 /.pnp
 .pnp.js
-
+blog/media/photos
 # testing
 /coverage
 
