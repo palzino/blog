@@ -5,11 +5,8 @@ from django.template.defaultfilters import slugify
 
 class Categories(models.TextChoices):
     HOMELAB = 'homelab'
-    SCIENCE = 'science'
     WORK = 'work'
     PROJECTS = 'projects'
-    CODING = 'coding'
-    BLOCKCHAIN = 'blockchain'
     OTHER = 'other'
 class BlogPost(models.Model):
     title = models.CharField(max_length=50)
